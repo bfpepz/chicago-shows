@@ -8,6 +8,7 @@ Output: dist/index.html     (standalone page, open or serve it)
 import argparse, json, html, sys
 from collections import Counter, OrderedDict
 from datetime import date, datetime
+from zoneinfo import ZoneInfo
 from pathlib import Path
 
 ROOT = Path(__file__).parent
@@ -237,7 +238,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--today", default=None)
     a = ap.parse_args()
-    today = date.fromisoformat(a.today) if a.today else date.today()
+    today = date.fromisoformat(a.today) if a.today else datetime.now(ZoneInfo('America/Chicago')).date()
 
     body, n, counts, priced = build(today)
     dist = ROOT / "dist"

@@ -1,0 +1,37 @@
+name: Probe venue pages
+on: workflow_dispatch
+permissions:
+  contents: write
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch raw pages and robots.txt
+        run: |
+          mkdir -p samples
+          UA="ChicagoShowsBot/0.1 (+https://github.com/bfpepz/chicago-shows)"
+          get(){ curl -sSL -m 40 -A "$UA" -o "samples/$1" -w "$1 %{http_code} %{size_download}\n" "$2" || echo "$1 FAILED"; }
+          get metro.html https://metrochicago.com/events/
+          get metro.robots https://metrochicago.com/robots.txt
+          get subt.html https://subt.net/
+          get subt.robots https://subt.net/robots.txt
+          get beatkitchen.html https://beatkitchen.com/
+          get beatkitchen.robots https://beatkitchen.com/robots.txt
+          get lhst.html https://lh-st.com/
+          get lhst.robots https://lh-st.com/robots.txt
+          get schubas.robots https://www.schubas.com/robots.txt
+          get reggies.html https://www.reggieslive.com/
+          get reggies.robots https://www.reggieslive.com/robots.txt
+          get sleepingvillage.html https://sleeping-village.com/events/
+          get sleepingvillage.robots https://sleeping-village.com/robots.txt
+          get bottomlounge.html https://www.bottomlounge.com/events/
+          get bottomlounge.robots https://www.bottomlounge.com/robots.txt
+          get hideout.html https://www.hideoutchicago.com/shows
+          get hideout.robots https://www.hideoutchicago.com/robots.txt
+          get emptybottle.html https://www.emptybottle.com/shows
+          get emptybottle.robots https://www.emptybottle.com/robots.txt
+      - name: Commit samples
+        run: |
+          git config user.name "github-actions"; git config user.email "actions@users.noreply.github.com"
+          git add samples && git commit -m "Add probe samples" && git push || echo "nothing to commit"
