@@ -1,0 +1,11 @@
+[
+  {"key": "metro", "name": "Metro", "site": "https://metrochicago.com/events/", "platform": "WordPress + Etix", "prices_on_list": false},
+  {"key": "subt", "name": "Subterranean", "site": "https://subt.net/", "platform": "WordPress + SeeTickets", "prices_on_list": true},
+  {"key": "beatkitchen", "name": "Beat Kitchen", "site": "https://beatkitchen.com/", "platform": "WordPress + SeeTickets", "prices_on_list": false},
+  {"key": "schubas", "name": "Schubas", "site": "https://lh-st.com/", "platform": "WordPress (shared with Lincoln Hall)", "prices_on_list": false},
+  {"key": "lincolnhall", "name": "Lincoln Hall", "site": "https://lh-st.com/", "platform": "WordPress (shared with Schubas)", "prices_on_list": false},
+  {"key": "reggies", "name": "Reggies", "site": "https://www.reggieslive.com/", "platform": "WordPress + TicketWeb", "prices_on_list": false},
+  {"key": "sleepingvillage", "name": "Sleeping Village", "site": "https://sleeping-village.com/events/", "platform": "WordPress + DICE", "prices_on_list": false},
+  {"key": "bottomlounge", "name": "Bottom Lounge", "site": "https://www.bottomlounge.com/events/", "platform": "Opendate + TicketWeb", "prices_on_list": false},
+  {"key": "hideout", "name": "The Hideout", "site": "https://www.hideoutchicago.com/shows", "platform": "Webflow / Opendate", "prices_on_list": false}
+]
