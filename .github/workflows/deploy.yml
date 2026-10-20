@@ -6,7 +6,7 @@ on:
     branches: [main]
   workflow_dispatch:
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 concurrency:
@@ -19,9 +19,14 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with: { python-version: "3.12" }
-      - name: Scrape (falls back to existing events.json if a venue fails)
+      - run: pip install -r requirements.txt
+      - name: Scrape (a venue that fails keeps its previous data)
+        run: python scrape.py || echo "scrape failed, using existing data"
+      - name: Commit refreshed data (also keeps the schedule alive)
+        if: github.event_name != 'push'
         run: |
-          if [ -f scrape.py ]; then python scrape.py || echo "scrape failed, using existing data"; fi
+          git config user.name "github-actions"; git config user.email "actions@users.noreply.github.com"
+          git add events.json && git commit -m "Daily data refresh" && git push || echo "no data changes"
       - run: python build.py
       - uses: actions/upload-pages-artifact@v3
         with: { path: dist }
