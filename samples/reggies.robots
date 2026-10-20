@@ -1,0 +1,15 @@
+
+User-agent: *
+Disallow: /wp-content/uploads/wpo-plugins-tables-list.json
+
+Sitemap: https://www.reggieslive.com/sitemap.xml
+Sitemap: https://www.reggieslive.com/sitemap.rss
+
+# START YOAST BLOCK
+# ---------------------------
+User-agent: *
+Disallow:
+
+Sitemap: https://www.reggieslive.com/sitemap_index.xml
+# ---------------------------
+# END YOAST BLOCK
