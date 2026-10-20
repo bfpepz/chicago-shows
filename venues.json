@@ -1,11 +1,212 @@
 [
-  {"key": "metro", "name": "Metro", "site": "https://metrochicago.com/events/", "platform": "WordPress + Etix", "prices_on_list": false},
-  {"key": "subt", "name": "Subterranean", "site": "https://subt.net/", "platform": "WordPress + SeeTickets", "prices_on_list": true},
-  {"key": "beatkitchen", "name": "Beat Kitchen", "site": "https://beatkitchen.com/", "platform": "WordPress + SeeTickets", "prices_on_list": false},
-  {"key": "schubas", "name": "Schubas", "site": "https://lh-st.com/", "platform": "WordPress (shared with Lincoln Hall)", "prices_on_list": false},
-  {"key": "lincolnhall", "name": "Lincoln Hall", "site": "https://lh-st.com/", "platform": "WordPress (shared with Schubas)", "prices_on_list": false},
-  {"key": "reggies", "name": "Reggies", "site": "https://www.reggieslive.com/", "platform": "WordPress + TicketWeb", "prices_on_list": false},
-  {"key": "sleepingvillage", "name": "Sleeping Village", "site": "https://sleeping-village.com/events/", "platform": "WordPress + DICE", "prices_on_list": false},
-  {"key": "bottomlounge", "name": "Bottom Lounge", "site": "https://www.bottomlounge.com/events/", "platform": "Opendate + TicketWeb", "prices_on_list": false},
-  {"key": "hideout", "name": "The Hideout", "site": "https://www.hideoutchicago.com/shows", "platform": "Webflow / Opendate", "prices_on_list": false}
+ {
+  "key": "metro",
+  "name": "Metro",
+  "site": "https://metrochicago.com/events/",
+  "platform": "WordPress + Etix",
+  "prices_on_list": false
+ },
+ {
+  "key": "subt",
+  "name": "Subterranean",
+  "site": "https://subt.net/",
+  "platform": "WordPress + SeeTickets",
+  "prices_on_list": true
+ },
+ {
+  "key": "beatkitchen",
+  "name": "Beat Kitchen",
+  "site": "https://beatkitchen.com/",
+  "platform": "WordPress + SeeTickets",
+  "prices_on_list": false
+ },
+ {
+  "key": "schubas",
+  "name": "Schubas",
+  "site": "https://lh-st.com/",
+  "platform": "WordPress (shared with Lincoln Hall)",
+  "prices_on_list": false
+ },
+ {
+  "key": "lincolnhall",
+  "name": "Lincoln Hall",
+  "site": "https://lh-st.com/",
+  "platform": "WordPress (shared with Schubas)",
+  "prices_on_list": false
+ },
+ {
+  "key": "reggies",
+  "name": "Reggies",
+  "site": "https://www.reggieslive.com/",
+  "platform": "WordPress + TicketWeb",
+  "prices_on_list": false
+ },
+ {
+  "key": "sleepingvillage",
+  "name": "Sleeping Village",
+  "site": "https://sleeping-village.com/events/",
+  "platform": "WordPress + DICE",
+  "prices_on_list": false
+ },
+ {
+  "key": "bottomlounge",
+  "name": "Bottom Lounge",
+  "site": "https://www.bottomlounge.com/events/",
+  "platform": "Opendate + TicketWeb",
+  "prices_on_list": false
+ },
+ {
+  "key": "hideout",
+  "name": "The Hideout",
+  "site": "https://www.hideoutchicago.com/shows",
+  "platform": "Webflow / Opendate",
+  "prices_on_list": false
+ },
+ {
+  "key": "thaliahall",
+  "name": "Thalia Hall",
+  "site": "https://www.thaliahallchicago.com/",
+  "platform": "unknown (to probe)",
+  "prices_on_list": false
+ },
+ {
+  "key": "cobra",
+  "name": "Cobra Lounge",
+  "site": "https://www.cobralounge.com/",
+  "platform": "unknown (to probe)",
+  "prices_on_list": false
+ },
+ {
+  "key": "concord",
+  "name": "Concord Music Hall",
+  "site": "https://www.concordmusichall.com/",
+  "platform": "unknown (to probe)",
+  "prices_on_list": false
+ },
+ {
+  "key": "riviera",
+  "name": "Riviera Theatre",
+  "site": "https://www.rivieratheatre.com/",
+  "platform": "unknown (to probe)",
+  "prices_on_list": false
+ },
+ {
+  "key": "vic",
+  "name": "The Vic Theatre",
+  "site": "https://www.victheatre.com/",
+  "platform": "unknown (to probe)",
+  "prices_on_list": false
+ },
+ {
+  "key": "aragon",
+  "name": "Aragon Ballroom",
+  "site": "https://www.aragonballroom.com/",
+  "platform": "unknown (to probe)",
+  "prices_on_list": false
+ },
+ {
+  "key": "parkwest",
+  "name": "Park West",
+  "site": "https://www.parkwestchicago.com/",
+  "platform": "unknown (to probe)",
+  "prices_on_list": false
+ },
+ {
+  "key": "saltshed",
+  "name": "Salt Shed",
+  "site": "https://www.saltshedchicago.com/",
+  "platform": "unknown (to probe)",
+  "prices_on_list": false
+ },
+ {
+  "key": "hob",
+  "name": "House of Blues Chicago",
+  "site": "https://www.houseofblues.com/chicago",
+  "platform": "unknown (to probe)",
+  "prices_on_list": false
+ },
+ {
+  "key": "hungrybrain",
+  "name": "Hungry Brain",
+  "site": "https://www.hungrybrainchicago.com/",
+  "platform": "unknown (to probe)",
+  "prices_on_list": false
+ },
+ {
+  "key": "constellation",
+  "name": "Constellation",
+  "site": "https://www.constellation-chicago.com/",
+  "platform": "unknown (to probe)",
+  "prices_on_list": false
+ },
+ {
+  "key": "liarsclub",
+  "name": "Liar's Club",
+  "site": "https://www.liarsclubchicago.com/",
+  "platform": "unknown (to probe)",
+  "prices_on_list": false
+ },
+ {
+  "key": "gman",
+  "name": "Gman Tavern",
+  "site": "https://www.gmantavern.com/",
+  "platform": "unknown (to probe)",
+  "prices_on_list": false
+ },
+ {
+  "key": "greenmill",
+  "name": "Green Mill",
+  "site": "https://www.greenmilljazz.com/",
+  "platform": "unknown (to probe)",
+  "prices_on_list": false
+ },
+ {
+  "key": "jazzshowcase",
+  "name": "Jazz Showcase",
+  "site": "https://www.jazzshowcase.com/",
+  "platform": "unknown (to probe)",
+  "prices_on_list": false
+ },
+ {
+  "key": "kingstonmines",
+  "name": "Kingston Mines",
+  "site": "https://www.kingstonmines.com/",
+  "platform": "unknown (to probe)",
+  "prices_on_list": false
+ },
+ {
+  "key": "buddyguy",
+  "name": "Buddy Guy's Legends",
+  "site": "https://www.buddyguy.com/",
+  "platform": "unknown (to probe)",
+  "prices_on_list": false
+ },
+ {
+  "key": "rosas",
+  "name": "Rosa's Lounge",
+  "site": "https://www.rosaslounge.com/",
+  "platform": "unknown (to probe)",
+  "prices_on_list": false
+ },
+ {
+  "key": "oldtown",
+  "name": "Old Town School of Folk Music",
+  "site": "https://www.oldtownschool.org/concerts/",
+  "platform": "unknown (to probe)",
+  "prices_on_list": false
+ },
+ {
+  "key": "fitzgeralds",
+  "name": "FitzGerald's",
+  "site": "https://www.fitzgeraldsnightclub.com/",
+  "platform": "unknown (to probe)",
+  "prices_on_list": false
+ },
+ {
+  "key": "space",
+  "name": "SPACE (Evanston)",
+  "site": "https://evanstonspace.com/",
+  "platform": "unknown (to probe)",
+  "prices_on_list": false
+ }
 ]

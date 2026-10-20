@@ -195,7 +195,7 @@ def build(today):
         c = counts.get(v["key"], 0)
         p = f'{priced.get(v["key"], 0)}/{c}' if c else "–"
         rows.append(f'<tr><td><a href="{esc(v["site"])}" rel="noopener" target="_blank">{esc(v["name"])}</a></td>'
-                    f'<td class="n">{c}</td><td class="n">{p}</td><td>{esc(v["platform"])}</td></tr>')
+                    f'<td class="n">{c}</td><td class="n">{p}</td><td>{("not connected yet · " if not c else "")}{esc(v["platform"])}</td></tr>')
     for v in NOT_CONNECTED:
         rows.append(f'<tr><td><a href="{esc(v["site"])}" rel="noopener" target="_blank">{esc(v["name"])}</a></td>'
                     f'<td class="n">–</td><td class="n">–</td><td>not connected yet · {esc(v["platform"])}</td></tr>')

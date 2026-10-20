@@ -31,6 +31,48 @@ jobs:
           get hideout.robots https://www.hideoutchicago.com/robots.txt
           get emptybottle.html https://www.emptybottle.com/shows
           get emptybottle.robots https://www.emptybottle.com/robots.txt
+          get thaliahall.html https://www.thaliahallchicago.com/
+          get thaliahall.robots https://www.thaliahallchicago.com/robots.txt
+          get cobra.html https://www.cobralounge.com/
+          get cobra.robots https://www.cobralounge.com/robots.txt
+          get concord.html https://www.concordmusichall.com/
+          get concord.robots https://www.concordmusichall.com/robots.txt
+          get riviera.html https://www.rivieratheatre.com/
+          get riviera.robots https://www.rivieratheatre.com/robots.txt
+          get vic.html https://www.victheatre.com/
+          get vic.robots https://www.victheatre.com/robots.txt
+          get aragon.html https://www.aragonballroom.com/
+          get aragon.robots https://www.aragonballroom.com/robots.txt
+          get parkwest.html https://www.parkwestchicago.com/
+          get parkwest.robots https://www.parkwestchicago.com/robots.txt
+          get saltshed.html https://www.saltshedchicago.com/
+          get saltshed.robots https://www.saltshedchicago.com/robots.txt
+          get hob.html https://www.houseofblues.com/chicago
+          get hob.robots https://www.houseofblues.com/robots.txt
+          get hungrybrain.html https://www.hungrybrainchicago.com/
+          get hungrybrain.robots https://www.hungrybrainchicago.com/robots.txt
+          get constellation.html https://www.constellation-chicago.com/
+          get constellation.robots https://www.constellation-chicago.com/robots.txt
+          get liarsclub.html https://www.liarsclubchicago.com/
+          get liarsclub.robots https://www.liarsclubchicago.com/robots.txt
+          get gman.html https://www.gmantavern.com/
+          get gman.robots https://www.gmantavern.com/robots.txt
+          get greenmill.html https://www.greenmilljazz.com/
+          get greenmill.robots https://www.greenmilljazz.com/robots.txt
+          get jazzshowcase.html https://www.jazzshowcase.com/
+          get jazzshowcase.robots https://www.jazzshowcase.com/robots.txt
+          get kingstonmines.html https://www.kingstonmines.com/
+          get kingstonmines.robots https://www.kingstonmines.com/robots.txt
+          get buddyguy.html https://www.buddyguy.com/
+          get buddyguy.robots https://www.buddyguy.com/robots.txt
+          get rosas.html https://www.rosaslounge.com/
+          get rosas.robots https://www.rosaslounge.com/robots.txt
+          get oldtown.html https://www.oldtownschool.org/concerts/
+          get oldtown.robots https://www.oldtownschool.org/robots.txt
+          get fitzgeralds.html https://www.fitzgeraldsnightclub.com/
+          get fitzgeralds.robots https://www.fitzgeraldsnightclub.com/robots.txt
+          get space.html https://evanstonspace.com/
+          get space.robots https://evanstonspace.com/robots.txt
       - name: Commit samples
         run: |
           git config user.name "github-actions"; git config user.email "actions@users.noreply.github.com"
