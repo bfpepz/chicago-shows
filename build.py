@@ -208,8 +208,8 @@ def build(today):
 <div class="wrap">
 <header class="top">
   <h1>Chicago <span>Shows</span></h1>
-  <p class="sub">Live music in Chicago, one list, soonest first. No ads. Prices shown where the venue lists them;
-  otherwise tap through to tickets. <span class="mono">Prototype · {span}</span></p>
+  <p class="sub">Live music in Chicago, one list, soonest first. Prices shown where the venue lists them;
+  otherwise tap through to tickets.</p>
 </header>
 <div class="bar">
   <input id="q" type="search" placeholder="Search bands or venues" aria-label="Search bands or venues">
@@ -245,6 +245,7 @@ def main():
     dist.mkdir(exist_ok=True)
 
     head = ('<meta name="claude:viewport-fit-sides" content="cover">\n<title>Chicago Shows</title>\n'
+            "<meta name='impact-site-verification' value='bb5ea79b-5729-4929-821a-e1705dc3ba7a'>\n"
             f'{FONTS}\n<style>{CSS}</style>\n')
     (dist / "artifact.html").write_text(head + body)
 
